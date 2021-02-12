@@ -1,0 +1,115 @@
+body {
+  background: #e6eff6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "join join"
+    "price info";
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 120px;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container > div {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 1.375em;
+  color: #2bb3b1;
+}
+
+h2 {
+  color: #bfdf32;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 0.875em;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+p span {
+  margin-left: 15px;
+  opacity: 50%;
+}
+
+a {
+  background: hsl(71, 73%, 54%);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.join {
+  grid-area: join;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.join p {
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #d5d8de;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.price {
+  grid-area: price;
+  background: #2bb3b1;
+  color: #fff;
+  border-radius: 0 0 0 5px;
+}
+
+.price > p {
+  margin: 10px 0 30px 0;
+}
+
+.info {
+  grid-area: info;
+  background: #4abebd;
+  border-radius: 0 0 5px 0;
+}
+
+.info ul li {
+  font-size: 0.875em;
+  line-height: 1.5;
+  opacity: 50%;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: calc(100% - 40px);
+    grid-template-areas:
+      "join"
+      "price"
+      "info";
+    grid-template-columns: 1fr;
+    margin: 40px auto;
+  }
+  .price {
+    border-radius: 0;
+  }
+  .info {
+    border-radius: 0 0 5px 5px;
+  }
+}

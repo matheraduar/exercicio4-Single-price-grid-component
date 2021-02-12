@@ -1,0 +1,43 @@
+html,
+body,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+span,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
+  font-size: 1em;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+li {
+  display: block;
+}
